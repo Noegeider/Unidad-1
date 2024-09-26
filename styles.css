@@ -7,3 +7,47 @@
 .titulo span{
   font-size: 2rem;
 }
+
+:root{
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #ffc107;
+  --secundario: #0097a7;
+  --gris: #757575;
+}
+.navegacion-principal{
+  background-color: var(--secundario);
+ padding: 1rem;
+ display:flex; /* flexbox esta diseñado para alinear elementos en tus diseños*/
+/*jutify-content es para filas / align-items es para columnas (flex-direction)*/
+justify-content: space-between;
+font-weight: bold;
+font-size: 2rem;
+
+
+}
+/*al poner el cursor en el hipervinculo*/
+.navegacion-principal a:hover{
+background-color: var(--primario);
+color :var(--oscuro)
+
+}
+
+
+.navegacion-principal a{
+ color: var(--blanco);
+ text-decoration: none;/*remueve el estilo subrayado en el texto*/
+
+}
+.contenedor{
+  width: 120rem; /*1200 pixeles por que 1 rem es igual a 10px*/
+  
+margin: 0 auto;
+}
+
+.nav-bg{
+  background-color: var(--secundario);
+}
+
+
+

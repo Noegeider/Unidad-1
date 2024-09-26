@@ -3,19 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="CSS/styles.css" as="style">
-  <link rel="stylesheet" href="CSS/styles.css">
+
+  <!--siempre va primero normalize-->
+  <link rel="preload" href="CSS/normalize.css" as="style">
+  <link rel="stylesheet" href="CSS/normalize.css">
+
+
+<!--importacion del google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,700;1,200;1,300;1,600;1,700&display=swap" rel="stylesheet">
+
+<!--css personalizado-->
+<link rel="preload" href="CSS/styles.css" as="style">
+<link rel="stylesheet" href="CSS/styles.css"> 
+
   <title>Document</title>
 </head>
 <body>
- 
-  <header> <h1> Noe Dominguez Developer <span>Developer</span> </h1></header>
+
+  <header> <h1 class="titulo"> Noe Dominguez <span>Developer</span> </h1></header>
   <!-- Comentario-->
-  <nav> <a href="#">Inicio</a>
-        <a href="#">Sobre Mi</a>
+   <div class="nav-bg">
+  <nav class="navegacion-principal contenedor"> <a href="#">Inicio</a>
+        <a href="#">Sobre Mí</a>
         <a href="#">Clientes</a>
         <a href="#">Contacto</a>
       </nav>
+    </div>
 <section><h2> Diseño y desarrollo web </h2>
   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -99,7 +114,7 @@
     <label> mensaje</label>
     <textarea></textarea>
   </div>
-  
+
   <div>
     <input type="submit" value="Enviar">
   </div>
